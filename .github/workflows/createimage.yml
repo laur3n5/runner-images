@@ -18,7 +18,7 @@ jobs:
           version: "latest"
 
       - name: install `packer` plugins
-        run: packer plugins install github.com/hashicorp/azure"
+        run: "packer plugins install github.com/hashicorp/azure"
 
       - name: Run `packer init`
         id: init
