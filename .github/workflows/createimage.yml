@@ -17,6 +17,9 @@ jobs:
         with:
           version: "latest"
 
+      - name: install `packer` plugins
+        run: packer plugins install github.com/hashicorp/azure"
+
       - name: Run `packer init`
         id: init
         run: "packer init ./images/ubuntu/templates/ubuntu-24.04.pkr.hcl"
