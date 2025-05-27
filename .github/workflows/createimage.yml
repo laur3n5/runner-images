@@ -38,7 +38,5 @@ jobs:
           client_id: ${{ secrets.CLIENT_ID }}
           client_secret: ${{ secrets.CLIENT_SECRET }}
           managed_image_name: "ubuntu-24.04-${{ github.run_id }}-${{ github.run_attempt }}"
-          managed_image_resource_group: ${{ secrets.MANAGED_IMAGE_RESOURCE_GROUP }}
-          resource_group_name: ${{ secrets.MANAGED_IMAGE_RESOURCE_GROUP }}
-          storage_account: ${{ env.STORAGE_ACCOUNT }}
+          managed_image_resource_group_name: ${{ secrets.MANAGED_IMAGE_RESOURCE_GROUP }}
           tenant_id: ${{ secrets.TENANT_ID }}
