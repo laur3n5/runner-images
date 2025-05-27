@@ -3,6 +3,9 @@ name: createimage
 on:
   - push
 
+env:
+  STORAGE_ACCOUNT: 'lhtestingrunnerimage'
+
 jobs:
   hcp-packer:
     runs-on: ubuntu-latest
